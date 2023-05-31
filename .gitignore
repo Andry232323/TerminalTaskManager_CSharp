@@ -1,0 +1,6 @@
+# Ignorer les fichiers de VS Code
+.vscode/
+
+# Ignorer les fichiers de logs
+*.log
+*.log.*
