@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\Liste_de_tache.csproj": {}
+    "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\Liste_de_tache.csproj": {
+    "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\Liste_de_tache.csproj",
+        "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
         "projectName": "Liste_de_tache",
-        "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\Liste_de_tache.csproj",
+        "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
         "packagesPath": "C:\\Users\\Andry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\obj\\",
+        "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andry\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
