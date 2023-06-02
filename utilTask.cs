@@ -1,24 +1,15 @@
 namespace UtilTask
 {
-    
-    public class Dt {
-        private int _d;
-        private int _m;
-        private int _y;
-
-        public int d => _d;
-        public int m => _m;
-        public int y => _y;
-        public Dt(int d, int m, int y) {
-            this._d = d;
-            this._m = m;
-            this._y = y;
-        }
-        public string toSrt() {
-            return _d + "\\" + _m + "\\" + _y; 
+    public static class Utils {
+        //TODO: a tester
+        public static int creatId()
+        {
+            string now = DateTime.Now.ToString("yyyyMMddHHmmss");
+            Random rd = new Random();
+            int rdNbr = rd.Next(1000);
+            return int.Parse(now + rdNbr);
         }
     }
-
     public static class UI {
         static string logo = @"
 ____  _____  _____  __ ___   __  __  _____  _____  _____  _____  _____  _____ 
