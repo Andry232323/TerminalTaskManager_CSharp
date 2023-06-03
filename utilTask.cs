@@ -2,12 +2,12 @@ namespace UtilTask
 {
     public static class Utils {
         //TODO: a tester
-        public static int creatId()
+        public static long creatId()
         {
             string now = DateTime.Now.ToString("yyyyMMddHHmmss");
             Random rd = new Random();
             int rdNbr = rd.Next(1000);
-            return int.Parse(now + rdNbr);
+            return long.Parse(now + rdNbr);
         }
     }
     public static class UI {

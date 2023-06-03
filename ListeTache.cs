@@ -5,7 +5,7 @@ public class ListeTask {
     DateTime dtCreat {get;}
     DateTime dtLastModif {get; set;}
     List<Task> tasks = new List<Task>();
-    int id;
+    long id;
 
     public void addTask(Task t) {
         //TODO: verifier si t exist deja
@@ -25,7 +25,7 @@ public class Task
 {
     bool done { get; set; }
     string name { get; set; }
-    int id {get; set;}
+    long id {get; set;}
     string descr { get; set; }
     DateTime dCreat {get; set;}
     DateTime dLastModif { get; set; }
