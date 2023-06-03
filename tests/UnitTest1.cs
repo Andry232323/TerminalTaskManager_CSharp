@@ -5,9 +5,17 @@ public class UnitTest1
     [Fact]
     public void creatIdtest()
     {
-        int[] t = new int[5];
-        for(int i = 0; i < 5; i++) {
+        int l = 25;
+        long[] t = new long[l];
+        for(int i = 0; i < l; i++) {
             t[i] = UtilTask.Utils.creatId();
+        }
+        for (int i = 1; i < t.Length; i++)
+        {
+            for (int j = i - 1; j >= 0; j--)
+            {                
+                Assert.True(t[j] != t[i]);
+            }
         }
     }
 
