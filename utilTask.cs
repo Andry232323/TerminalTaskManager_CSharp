@@ -2,12 +2,10 @@ namespace UtilTask
 {
     public static class Utils {
         //TODO: a tester
-        public static long creatId()
+        public static string creatId()
         {
-            string now = DateTime.Now.ToString("yyyyMMddHHmmss");
-            Random rd = new Random();
-            int rdNbr = rd.Next(1000);
-            return long.Parse(now + rdNbr);
+            Guid uniqueId = Guid.NewGuid();
+            return uniqueId.ToString();
         }
     }
     public static class UI {
@@ -19,7 +17,10 @@ ____  _____  _____  __ ___   __  __  _____  _____  _____  _____  _____  _____
                                                                                
         ";
         static string instructions = @"
-        - Première instructions 
+        - stop : arreter le programme
+
+
+        Saisir la commande => 
         ";
         public static void startDisplay() {
             Console.Clear();

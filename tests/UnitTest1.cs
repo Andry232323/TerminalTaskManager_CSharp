@@ -6,7 +6,7 @@ public class UnitTest1
     public void creatIdtest()
     {
         int l = 25;
-        long[] t = new long[l];
+        string[] t = new string[l];
         for(int i = 0; i < l; i++) {
             t[i] = UtilTask.Utils.creatId();
         }
