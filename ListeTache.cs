@@ -1,31 +1,60 @@
 namespace ListeTache;
 using UtilTask;
+
+/*
+Exemple de fichier texte pour enregistrer ListTask
+
+name~~~id~~~dtCreat~~~dtlastModif
+task1
+task2
+task3
+*/
+
+
+/*
+Exemple de fichier ligne pour representer une Task
+
+#~~~name~~~id~~~dtCreat~~~dtLastModif~~~descr
+*/
 public class ListeTask {
     string name {get; set;}
     DateTime dtCreat {get;}
     DateTime dtLastModif {get; set;}
     List<Task> tasks = new List<Task>();
-    int id;
+    string id;
 
     public void addTask(Task t) {
-        //TODO: verifier si t exist deja
+        if(Task.taskExistName(t.name, this.tasks))
         tasks.Add(t);
     }
 
-    //TODO: a tester
-    public ListeTask(string name, DateTime dtCreat) {
+    private ListeTask(string name, DateTime dtCreat) {
         this.name = name;
         this.id = Utils.creatId();
         this.dtCreat = dtCreat;
         this.dtLastModif = dtCreat;
+    }
+
+    // TODO: a tester
+    public static void creatListTaskEmpty(string name) {
+        string path = name + ".txt";
+        if(File.Exists(path)) {
+            Console.WriteLine("La liste de tache " + name + "existe déjà");
+        } else {
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                ListeTask lt = new ListeTask(name, DateTime.Now.Date);
+                sw.WriteLine(lt.name+"~~~"+lt.id+"~~~"+lt.dtCreat+"~~~"+lt.dtLastModif);
+            }
+        }
     }
 }
 
 public class Task
 {
     bool done { get; set; }
-    string name { get; set; }
-    int id {get; set;}
+    public string name { get; set; }
+    string id {get; set;}
     string descr { get; set; }
     DateTime dCreat {get; set;}
     DateTime dLastModif { get; set; }
@@ -38,8 +67,8 @@ public class Task
         this.id = Utils.creatId();
     }
 
-    //TODO: a tester
-    public static bool taskExistId(int id, List<Task> tasks) {
+    //TODO: a changer l'algo
+    public static bool taskExistId(string id, List<Task> tasks) {
         foreach (Task t in tasks)
         {
             if(t.id == id)
