@@ -4768,11 +4768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
+      "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
       "projectName": "Liste_de_tache",
-      "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
+      "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
       "packagesPath": "C:\\Users\\Andry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\obj\\",
+      "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andry\\AppData\\Roaming\\NuGet\\NuGet.Config"

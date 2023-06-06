@@ -1,5 +1,6 @@
 namespace tests;
 using Xunit;
+using App;
 public class UnitTest1
 { 
     [Fact]
@@ -19,4 +20,23 @@ public class UnitTest1
         }
     }
 
+    [Fact]
+    public void TestCreatListTaskEmpty()
+    {
+        ListeTache.ListeTask.creatListTaskEmpty("test1");
+        Assert.True(File.Exists(App.Program.projectPath+"\\ListTask\\test1.txt"));
+        File.Delete(App.Program.projectPath+"\\ListTask\\test1.txt");
+    }
+
+    [Fact]
+    public void TestAddTask()
+    {
+        DateTime now = DateTime.Now;
+        ListeTache.Task t = new ListeTache.Task("maTache", "une description", now);
+        ListeTache.ListeTask lt = new ListeTache.ListeTask("test", now);
+        lt.addTask(t);
+        List<ListeTache.Task> exp =  new List<ListeTache.Task>();
+        exp.Add(t);
+       Assert.True(lt.tasks.SequenceEqual(exp));
+    }
 }

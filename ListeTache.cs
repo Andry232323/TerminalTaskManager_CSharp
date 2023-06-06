@@ -1,6 +1,6 @@
 namespace ListeTache;
 using UtilTask;
-
+using App;
 /*
 Exemple de fichier texte pour enregistrer ListTask
 
@@ -17,49 +17,54 @@ Exemple de fichier ligne pour representer une Task
 #~~~name~~~id~~~dtCreat~~~dtLastModif~~~descr
 */
 public class ListeTask {
-    string name {get; set;}
-    DateTime dtCreat {get;}
-    DateTime dtLastModif {get; set;}
-    List<Task> tasks = new List<Task>();
-    string id;
+    public string ListTaskDir = Path.Combine(App.Program.projectPath, "ListTask");
+    public string name;
+    public DateTime dtCreat; 
+    public DateTime dtLastModif; 
+    public List<Task> tasks = new List<Task>();
+    public string id;
 
-    public void addTask(Task t) {
-        if(Task.taskExistName(t.name, this.tasks))
-        tasks.Add(t);
-    }
-
-    private ListeTask(string name, DateTime dtCreat) {
+    public ListeTask(string name, DateTime dtCreat) {
         this.name = name;
         this.id = Utils.creatId();
         this.dtCreat = dtCreat;
         this.dtLastModif = dtCreat;
     }
 
-    // TODO: a tester
     public static void creatListTaskEmpty(string name) {
-        string path = name + ".txt";
-        if(File.Exists(path)) {
+        string filePath = App.Program.projectPath+ "\\ListTask"  + "\\" + name + ".txt";
+        if(File.Exists(filePath)) {
             Console.WriteLine("La liste de tache " + name + "existe déjà");
         } else {
-            using (StreamWriter sw = new StreamWriter(path))
+            using (StreamWriter sw = new StreamWriter(filePath))
             {
-                ListeTask lt = new ListeTask(name, DateTime.Now.Date);
+                ListeTask lt = new ListeTask(name, DateTime.Now);
                 sw.WriteLine(lt.name+"~~~"+lt.id+"~~~"+lt.dtCreat+"~~~"+lt.dtLastModif);
             }
         }
+    }
+    
+    //TODO: a tester
+    public void addTask(Task t) {
+        tasks.Add(t);
+        using (StreamWriter sw = new StreamWriter(ListTaskDir + "\\" + this.name + ".txt" , true))
+        {
+            sw.WriteLine("#~~~" + t.name + "~~~" + t.id + "~~~" + t.dCreat + "~~~" + t.dLastModif + "~~~" + t.descr); 
+        }
+        this.dtLastModif = DateTime.Now;
     }
 }
 
 public class Task
 {
-    bool done { get; set; }
-    public string name { get; set; }
-    string id {get; set;}
-    string descr { get; set; }
-    DateTime dCreat {get; set;}
-    DateTime dLastModif { get; set; }
+    public bool done;
+    public string name;
+    public string id;
+    public string descr;
+    public DateTime dCreat;
+    public DateTime dLastModif;
 
-    private Task(string name, string descr, DateTime dCreat) {
+    public Task(string name, string descr, DateTime dCreat) {
         this.name = name;
         this.descr = descr;
         this.done = false;
@@ -87,12 +92,4 @@ public class Task
         }
         return false;
     }
-
-    public Task creatTask(string name, string descr, DateTime dCreat) {
-        Task t = new Task(name, descr, dCreat);
-        t.id = Utils.creatId();
-        t.dLastModif = dCreat;
-        return t; 
-    }
-
 }

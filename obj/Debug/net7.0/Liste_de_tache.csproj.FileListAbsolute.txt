@@ -18,3 +18,23 @@ C:\Users\Andry\Desktop\Lecon C#\Liste_de_tache\TerminalTaskManager_CSharp\obj\De
 C:\Users\Andry\Desktop\Lecon C#\Liste_de_tache\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.pdb
 C:\Users\Andry\Desktop\Lecon C#\Liste_de_tache\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.genruntimeconfig.cache
 C:\Users\Andry\Desktop\Lecon C#\Liste_de_tache\TerminalTaskManager_CSharp\obj\Debug\net7.0\ref\Liste_de_tache.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\Liste_de_tache.exe
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\Liste_de_tache.deps.json
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\Liste_de_tache.runtimeconfig.json
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\Liste_de_tache.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\Liste_de_tache.pdb
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\xunit.abstractions.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\xunit.assert.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\xunit.core.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\bin\Debug\net7.0\xunit.execution.dotnet.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.csproj.AssemblyReference.cache
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.AssemblyInfoInputs.cache
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.AssemblyInfo.cs
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.csproj.CoreCompileInputs.cache
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.csproj.CopyComplete
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\refint\Liste_de_tache.dll
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.pdb
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\Liste_de_tache.genruntimeconfig.cache
+C:\Users\Andry\Desktop\Lecon C#\Nouveau dossier\TerminalTaskManager_CSharp\obj\Debug\net7.0\ref\Liste_de_tache.dll

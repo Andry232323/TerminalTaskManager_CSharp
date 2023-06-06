@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5WO5U2hFzci3CE+DbM7v/qLuCsAUbP5FPLNlt9WzT6wBDOCeFyg6zNFUd9PNDdOwf3EQzjcuGVxXF6wiNjxavw==",
+  "dgSpecHash": "BGG2gXIM+Opj2ZJ1Zz7KrmN9U2Wu+C6fJ+pLALQGVq7rF7Ry+x/gZFN7O+keXnhUbco5ElQK7bBpVFMH3qfIAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
+  "projectFilePath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Andry\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

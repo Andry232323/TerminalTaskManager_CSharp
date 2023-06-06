@@ -5541,11 +5541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\tests\\tests.csproj",
+      "projectUniqueName": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\tests\\tests.csproj",
       "projectName": "tests",
-      "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\tests\\tests.csproj",
+      "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\tests\\tests.csproj",
       "packagesPath": "C:\\Users\\Andry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\tests\\obj\\",
+      "outputPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andry\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5560,8 +5560,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj": {
-              "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Liste_de_tache\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj"
+            "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj": {
+              "projectPath": "C:\\Users\\Andry\\Desktop\\Lecon C#\\Nouveau dossier\\TerminalTaskManager_CSharp\\Liste_de_tache.csproj"
             }
           }
         }
