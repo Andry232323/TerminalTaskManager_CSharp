@@ -31,12 +31,15 @@ public class UnitTest1
     [Fact]
     public void TestAddTask()
     {
-        DateTime now = DateTime.Now;
-        ListeTache.Task t = new ListeTache.Task("maTache", "une description", now);
-        ListeTache.ListeTask lt = new ListeTache.ListeTask("test", now);
+        DateTime date = new DateTime(2023, 5, 31);
+        string filePath = App.Program.projectPath+"\\ListTask\\Mes_taches.txt";
+        ListeTache.ListeTask lt = ListeTache.ListeTask.creatListTaskEmpty("Mes_taches");
+        ListeTache.Task t = new ListeTache.Task("ma tache","une description", date );
         lt.addTask(t);
-        List<ListeTache.Task> exp =  new List<ListeTache.Task>();
-        exp.Add(t);
-       Assert.True(lt.tasks.SequenceEqual(exp));
+        Assert.True(File.Exists(filePath));
+        string lastLine = File.ReadLines(filePath).LastOrDefault()??"##########";
+        Assert.True(lastLine != "##########");
+        Assert.Equal(lastLine,"#~~~"+t.name+"~~~"+t.id+"~~~"+t.dCreat+"~~~"+t.dLastModif+"~~~"+t.descr);
+       
     }
 }

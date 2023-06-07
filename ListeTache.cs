@@ -31,20 +31,21 @@ public class ListeTask {
         this.dtLastModif = dtCreat;
     }
 
-    public static void creatListTaskEmpty(string name) {
+    public static ListeTask creatListTaskEmpty(string name) {
         string filePath = App.Program.projectPath+ "\\ListTask"  + "\\" + name + ".txt";
+        ListeTask lt = new ListeTask(name, DateTime.Now);
         if(File.Exists(filePath)) {
-            Console.WriteLine("La liste de tache " + name + "existe déjà");
+            Console.WriteLine("La liste de tache " + name + " existe déjà");
         } else {
             using (StreamWriter sw = new StreamWriter(filePath))
             {
-                ListeTask lt = new ListeTask(name, DateTime.Now);
                 sw.WriteLine(lt.name+"~~~"+lt.id+"~~~"+lt.dtCreat+"~~~"+lt.dtLastModif);
             }
         }
+        Console.WriteLine("Liste de tache créer");
+        return lt;
     }
     
-    //TODO: a tester
     public void addTask(Task t) {
         tasks.Add(t);
         using (StreamWriter sw = new StreamWriter(ListTaskDir + "\\" + this.name + ".txt" , true))
@@ -72,24 +73,4 @@ public class Task
         this.id = Utils.creatId();
     }
 
-    //TODO: a changer l'algo
-    public static bool taskExistId(string id, List<Task> tasks) {
-        foreach (Task t in tasks)
-        {
-            if(t.id == id)
-                return true;
-        }
-        return false;
-    }
-
-    //TODO: a tester
-    public static bool taskExistName(string name, List<Task> tasks) {
-        foreach (Task t in tasks)
-        {
-            if(name.Equals(t.name)) {
-                return true;
-            }
-        }
-        return false;
-    }
 }
